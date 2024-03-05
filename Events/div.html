@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover</title>
+    <body style="background-color: rgb(19, 238, 11);"></body>
+    <style>
+        body{
+            margin: 0;
+            padding: 40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        #myDiv {
+            width: 100px;
+            height: 60px;
+            background-color: blue; 
+            padding: 20px;
+            font-size: larger;
+            align-items: center;
+            border: 3px solid black;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="myDiv"> hover me please.</div>
+
+<script>
+    document.getElementById('myDiv').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'red';
+    });
+
+    document.getElementById('myDiv').addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'blue';
+    });
+</script>
+
+</body>
+</html>
